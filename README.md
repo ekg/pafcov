@@ -1,6 +1,6 @@
 # pafcov: PAF Coverage Calculator
 
-This repository contains a Rust program that calculates the coverage of a target sequence in a PAF file. The program can calculate coverage based on total mapping overlap or base-by-base alignment. The output is in BED format.
+This repository contains a Rust program that calculates the coverage of a target sequence in a [pairwise alignment format (PAF) file](https://github.com/lh3/miniasm/blob/master/PAF.md). The program can calculate coverage based on total mapping overlap or base-by-base alignment. The output is in BED format.
 
 ## Build
 

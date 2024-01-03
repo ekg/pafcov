@@ -1,4 +1,4 @@
-# PAF Coverage Calculator
+# pafcov: PAF Coverage Calculator
 
 This repository contains a Rust program that calculates the coverage of a target sequence in a PAF file. The program can calculate coverage based on total mapping overlap or base-by-base alignment. The output is in BED format.
 
@@ -15,6 +15,12 @@ cargo build
 ```
 
 This will create an executable file in the `target/debug` directory.
+
+You can also install `pafcov` in your environment:
+
+```sh
+cargo install --force --path .
+```
 
 ## Usage
 

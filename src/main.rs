@@ -72,7 +72,9 @@ fn update_coverage_vector(coverage_vector: &mut Vec<u32>, cigar: &str, start_pos
                 }
             }
         }
-        pos += length;
+        if op != "I" && op != "S" {
+            pos += length;
+        }
     }
 }
 

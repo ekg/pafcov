@@ -52,7 +52,7 @@ fn parse_paf_line(line: &str) -> (String, usize, usize, usize, String) {
     let target_length: usize = fields[6].parse().expect("Invalid target length");
     let start: usize = fields[7].parse().unwrap();
     let end: usize = fields[8].parse().unwrap();
-    let cigar = fields.iter().find(|&f| f.starts_with("cg:z:")).expect("CIGAR string not found").split(':').nth(2).unwrap().to_string();
+    let cigar = fields.iter().find(|&f| (f.starts_with("cg:z:"))|(f.starts_with("cg:Z:"))).expect("CIGAR string not found").split(':').nth(2).unwrap().to_string();
 
     (target_name, target_length, start, end, cigar)
 }
